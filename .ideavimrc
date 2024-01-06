@@ -1,0 +1,23 @@
+set number relativenumber
+
+let mapleader = " "
+" system cliboard
+vmap <leader>y "+y
+vmap <leader>d "+d
+nmap <leader>p "+p
+nmap <leader>P "+P
+vmap <leader>p "+p
+vmap <leader>P "+P
+
+" Actions
+nmap <leader>h :action PreviousTab<CR>
+nmap <leader>l :action NextTab<CR>
+
+" Highlight copied text
+Plug 'machakann/vim-highlightedyank'
+" Commentary plugin
+Plug 'tpope/vim-commentary'
+
+" nerdtree
+set NERDTree
+nnoremap <C-1> :NERDTree <CR>
